@@ -6,7 +6,7 @@ cap = cv.VideoCapture(0)
 if not cap.isOpened():
     print("Cannot open camera")
     exit()
-while True:
+while True: # cap.isOpened로 변경해도 똑같음
     # Capture frame-by-frame
     ret, frame = cap.read()
  

@@ -12,7 +12,7 @@ while cap.isOpened():
         break
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
  
-    cv.imshow('frame', gray)
+    cv.imshow('frame', gray) # 어떻게 읽느냐에 따라 불러오는게 달라짐
     if cv.waitKey(1) == ord('q'):
         break
  
